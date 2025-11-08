@@ -16,3 +16,10 @@ To remove a submodule you need to:
 - Delete the now untracked submodule files rm -rf path_to_submodule
 
 [src](https://gist.github.com/myusuf3/7f645819ded92bda6677)
+
+## Initializing & Updating Git Submodules
+
+```bash
+git submodule update --init --recursive     # first time after clone
+git submodule update --remote --recursive   # for updating
+```

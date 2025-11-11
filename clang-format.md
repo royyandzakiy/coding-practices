@@ -6,6 +6,7 @@ clang-format -style=microsoft -dump-config > .clang-format
 ```bash
 ---
 Language: Cpp
+Standard: Cpp23
 BasedOnStyle: Microsoft
 
 # === Indentation & Alignment ===
@@ -58,7 +59,6 @@ IncludeBlocks: Preserve
 FixNamespaceComments: true
 NamespaceIndentation: None
 ReflowComments: true
-
 ---
 
 
@@ -67,6 +67,8 @@ ReflowComments: true
 ## .vscode/settings.json
 ```json
 {
+	// --- Standard ---
+	"C_Cpp.default.cppStandard": "c++23",
 	// --- CMake ---
 	"cmake.useCMakePresets": "always",
 	"cmake.options.statusBarVisibility": "visible",
@@ -133,6 +135,5 @@ ReflowComments: true
 		"xutility": "cpp",
 		"print": "cpp"
 	},
-	"iis.configDir": ""
 }
 ```
